@@ -33,7 +33,7 @@ export default function LiveAnalytics() {
   }, []);
 
   return (
-    <div className="p-6 mt-64 lg:mt-44">
+    <div className="container m-auto p-6 ">
       <h2 className="text-2xl font-bold">📊 Live Viewers</h2>
       <Line data={chartData} />
     </div>

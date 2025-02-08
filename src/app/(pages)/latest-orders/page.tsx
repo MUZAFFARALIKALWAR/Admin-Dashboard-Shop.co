@@ -20,7 +20,6 @@ export default function OrdersDashboard() {
           products[] { TrackingId, name, price, qty, size, color }
         }[15...20]`;
         const data = await client.fetch(query);
-        console.log("Fetched Orders:", data);
         setOrders(data || []);
         setLoading(false);
       } catch (error) {
@@ -48,7 +47,7 @@ export default function OrdersDashboard() {
   }
 
   return (
-    <div className="container mx-auto p-4 mt-64 lg:mt-44">
+    <div className="container mx-auto p-4">
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white border">
           <thead>

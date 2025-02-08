@@ -2,7 +2,8 @@ import Link from "next/link";
 
 export default function DashboardNav() {
   return (
-    <div className="bg-gray-900 fixed top-0 z-10 w-full p-4 rounded-lg shadow-lg flex flex-col lg:flex-row items-start lg:justify-between lg:items-center">
+
+     <div className="bg-gray-900   max-w-screen-2xl mx-auto p-4 rounded-lg shadow-lg flex flex-col lg:flex-row items-start lg:justify-between lg:items-center">
       <ul className="flex flex-col gap-3">
         <li>
           <Link
@@ -44,5 +45,6 @@ export default function DashboardNav() {
               
                </div>
     </div>
+  
   );
 }

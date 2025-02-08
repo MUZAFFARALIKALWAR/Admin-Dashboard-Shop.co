@@ -19,7 +19,7 @@ export default function StatsComponent() {
           products[] { TrackingId, name, price, qty, size, color }
         }`;
         const data = await client.fetch(query);
-        console.log("Fetched Orders:", data);
+     
         setOrders(data || []); // Ensure it's always an array
       } catch (error) {
         console.error("Error fetching orders:", error);
@@ -61,7 +61,7 @@ export default function StatsComponent() {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-6 p-4 mt-64 lg:mt-56">
+    <div className="flex flex-wrap justify-center gap-6 p-4 mt-10">
       {stats.map((stat) => (
         <motion.div
           key={stat.id}
